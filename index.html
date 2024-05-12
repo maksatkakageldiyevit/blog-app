@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&;display=swap" rel="stylesheet">
+    <title>Blog app</title>
+    <link rel="stylesheet" href="reset.css">
+     <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="hero">
+     <div class="container">
+       <div class="blog__box">
+        <div class="blog__row">
+          <div class="blog__col">
+            <h2 class="blog__title">Новый пост</h2>
+            <form class="blog__form">
+              <div class="blog__form-title">
+                <input class="blog__input-title" id="js-post-title-input" type="text" placeholder="Заголовок">
+                <p id="blog__form-length-title" class="blog__form-length-title">
+                  Допустимое колличество символов заголовка осталось:
+                  <span id="current-length-symbol-title">100</span>
+                </p>
+              </div>
+              <div class="blog__form-text">
+                <textarea class="blog__textarea" id="js-post-text-input" placeholder="Напиши пост"></textarea>
+
+                <p id="blog__form-length-text" class="blog__form-length-text">
+                  Допустимое колличество символов текста осталось:
+                  <span id="current-length-symbol-text">200</span>
+                </p>
+              </div>
+              <div class="validation-message validation-message--hidden " id="validation-message">Длина текста не должна превышать 200 символов</div>
+              <button type="button" class="blog__btn-new-post" id="new-post-btn">
+                Опубликовать
+              </button>
+            </form>
+          </div>
+            <div class="blog__col">
+              <h2 class="blog__title">Лента</h2>
+               <div class="posts" id="js-posts">Лента пусто...</div>
+            </div>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>
+    <script src="index.js"> </script>
+</body>
+</html>
